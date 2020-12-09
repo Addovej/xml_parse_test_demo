@@ -1,9 +1,10 @@
+import csv
 from multiprocessing import Pool
 from pathlib import Path
 from typing import List, Optional, Tuple
 from xml.etree import ElementTree as et
 from zipfile import ZipFile
-import csv
+
 from tqdm import tqdm
 
 from utils import timing, ValidationException
