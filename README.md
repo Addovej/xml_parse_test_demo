@@ -32,8 +32,9 @@ Implement python-app which should do following:
 In `objects` tag random count `object` tag in range from 1 to 10.
 
 2. Process a directory with generated zip files, parse nested xml-files and created two csv-files:
-  First: id, level - for each xml-file.
-  Second: id, object_name - for each 'object' tag in each xml-file (1-10 row per xml).
+
+    First: id, level - for each xml-file.
+    Second: id, object_name - for each 'object' tag in each xml-file (1-10 row per xml).
 
 For second part mandatory use multicore processors resources.
  
