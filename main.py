@@ -10,7 +10,7 @@ def parse_args() -> Namespace:
     parser: ArgumentParser = ArgumentParser()
     parser.add_argument(
         '--mode', type=str, nargs='?',
-        choices=('generate', 'parse', 'clear'),
+        choices=('generate', 'parse'),
         default='parse'
     )
     parser.add_argument('--path', type=str, nargs='?', default='data')

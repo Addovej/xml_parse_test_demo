@@ -1,10 +1,11 @@
 from time import time
+from typing import Any, Callable
 
 
-def timing(func):
-    def wrapper(*arg, **kw):
-        tb = time()
-        result = func(*arg, **kw)
+def timing(func: Callable):
+    def wrapper(*arg: Any, **kwargs: Any):
+        tb: float = time()
+        result = func(*arg, **kwargs)
         print(f'{func.__name__} takes {time() - tb}')
         return result
     return wrapper
